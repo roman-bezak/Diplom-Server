@@ -1,0 +1,9 @@
+{
+    "DB":{
+        "host":"mongodb://localhost:27017/diplom-server-db"
+    },
+
+    "app":{
+        "port":3000
+    }
+}
