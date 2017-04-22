@@ -1,0 +1,17 @@
+{
+  "name": "diplom-server",
+  "version": "1.0.0",
+  "description": "The super server",
+  "main": "start.js",
+  "dependencies": {
+    "express": "^4.15.2",
+    "jade": "^1.11.0",
+    "mongodb": "^2.2.26"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "inkognito228",
+  "license": "ISC"
+}
