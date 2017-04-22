@@ -1,7 +1,7 @@
 var express = require('express')
   , router = express.Router()
 
-router.get('/add', function(req, res) {
+router.get('/', function(req, res) {
   res.render('index')
 })
 
