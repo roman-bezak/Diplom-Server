@@ -1,0 +1,74 @@
+doctype html
+html(lang='en')
+  head
+    title Bootstrap Example
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(rel='stylesheet', href='bootstrap/css/bootstrap.min.css')
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js')
+    script(src='bootstrap/js/bootstrap.min.js')
+  body
+    .container
+      form.form-horizontal(action='results.php', method='POST', role='form')
+        fieldset
+          // Form Name
+          legend Add project
+          // Text input
+          .form-group
+            label.col-md-4.control-label(for='name') Name
+            .col-md-4
+              input#name.form-control.input-md(name='name', type='text', placeholder='Enter your name', required='')
+          // Text input
+          .form-group
+            label.col-md-4.control-label(for='email') Email
+            .col-md-4
+              input#email.form-control.input-md(name='email', type='text', placeholder='Enter your email id', required='')
+          // Password input
+          .form-group
+            label.col-md-4.control-label(for='password') Password
+            .col-md-4
+              input#password.form-control.input-md(name='password', type='password', placeholder='Enter a password', required='')
+          // Text input
+          .form-group
+            label.col-md-4.control-label(for='contact') Contact no.
+            .col-md-4
+              input#contact.form-control.input-md(name='contact', type='text', placeholder='Enter your contact no.', required='')
+          // Select Basic
+          .form-group
+            label.col-md-4.control-label(for='blood_group') Blood Group
+            .col-md-4
+              select#blood_group.form-control(name='blood_group')
+                option(value='-1') Select
+                option(value='1') A+
+                option(value='2') B+
+                option(value='3') AB+
+                option(value='4') O+
+                option(value='5') A-
+                option(value='6') B-
+                option(value='7') AB-
+                option(value='8') O-
+          // Text input
+          .form-group
+            label.col-md-4.control-label(for='street') Street
+            .col-md-4
+              input#street.form-control.input-md(name='street', type='text', placeholder='Enter your street', required='')
+          // Text input
+          .form-group
+            label.col-md-4.control-label(for='area') Area
+            .col-md-4
+              input#area.form-control.input-md(name='area', type='text', placeholder='Enter your area', required='')
+          // Text input
+          .form-group
+            label.col-md-4.control-label(for='city') City
+            .col-md-4
+              input#city.form-control.input-md(name='city', type='text', placeholder='Enter your city', required='')
+          // Text input
+          .form-group
+            label.col-md-4.control-label(for='dist') District
+            .col-md-4
+              input#dist.form-control.input-md(name='dist', type='text', placeholder='Enter your district', required='')
+          // Button
+          .form-group
+            label.col-md-4.control-label(for='signup')
+            .col-md-4
+              button#signup.btn.btn-success(name='signup') Sign Up
