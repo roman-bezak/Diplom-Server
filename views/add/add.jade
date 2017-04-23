@@ -14,16 +14,16 @@ html(lang='en')
           form(method='post', action='/add')
             .form-group
               label Project name:
-              input#text.form-control(type='text', placeholder='Enter project name', name="project-name")
+              input#text.form-control(type='text', placeholder='Enter project name', name="project_name")
             .form-group
               label(for='text') Description:
               textarea.form-control(style='resize: none;', rows='5', placeholder='Describe your project', name="description")
             .form-group
               label(for='text') URL address:
-              input#text.form-control(type='text', placeholder='Enter your site url', name='url-site')
+              input#text.form-control(type='text', placeholder='Enter your site url', name='url_site')
             .form-group
               label(for='text') API url address:
-              input#text.form-control(type='text', placeholder='Enter your api url (http://example.com/api)', name='url-api')
+              input#text.form-control(type='text', placeholder='Enter your api url (http://example.com/api)', name='url_api')
             .form-group
               label(for='email') Email:
               input#email.form-control(type='email', placeholder='Enter your email', name='email')
