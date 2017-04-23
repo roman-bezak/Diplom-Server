@@ -25,4 +25,5 @@ db.connect(config.get('DB.host'), function(err) {
 
 app.listen(port, function() {
   console.log('Listening on port ' + port)
+  console.log(new Date().toString());
 })

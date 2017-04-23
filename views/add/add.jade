@@ -4,20 +4,27 @@ html(lang='en')
     title Bootstrap Example
     meta(charset='utf-8')
     meta(name='viewport', content='width=device-width, initial-scale=1')
-    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css')
-    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js')
+    link(rel='stylesheet', href='/bootstrap/css/bootstrap.min.css')
   body
     .container
-      h2 Vertical (basic) form
-      form(action='/add', method='POST')
-        .form-group
-          label(for='email') Email:
-          input#email.form-control(type='email', name='email', placeholder='Enter email')
-        .form-group
-          label(for='pwd') Password:
-          input#pwd.form-control(type='password', name='password', placeholder='Enter password')
-        .checkbox
-          label
-            input(type='checkbox', name='checkbox')
-            |  Remember me
-        button.btn.btn-default(type='submit') Submit
+      .row
+        .col-md-6.col-md-offset-3
+          h2 Add project
+          hr
+          form(method='post', action='/add')
+            .form-group
+              label Project name:
+              input#text.form-control(type='text', placeholder='Enter project name', name="project-name")
+            .form-group
+              label(for='text') Description:
+              textarea.form-control(style='resize: none;', rows='5', placeholder='Describe your project', name="description")
+            .form-group
+              label(for='text') URL address:
+              input#text.form-control(type='text', placeholder='Enter your site url', name='url-site')
+            .form-group
+              label(for='text') API url address:
+              input#text.form-control(type='text', placeholder='Enter your api url (http://example.com/api)', name='url-api')
+            .form-group
+              label(for='email') Email:
+              input#email.form-control(type='email', placeholder='Enter your email', name='email')
+            button.btn.btn-primary(type='submit') Submit
